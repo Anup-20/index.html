@@ -1,7 +1,4 @@
 body {
   background-image: url('INFOMATICS.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* Optional: Fixes the background image */
-  background-position: center;
-}
+ }
