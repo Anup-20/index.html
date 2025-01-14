@@ -18,23 +18,18 @@
       color: #333;
     }
 
-    /* Header - Plain White Background */
     header {
       background: #ffffff;
-      padding: 0;
+      padding: 20px 0;
       position: sticky;
       top: 0;
       z-index: 1000;
-    }
-
-    .header-image {
       text-align: center;
     }
 
-    .header-image img {
-      max-width: 150px; /* Logo smaller size */
+    header img {
+      max-width: 150px;
       height: auto;
-      display: block;
     }
 
     nav {
@@ -73,8 +68,8 @@
       right: 0;
       bottom: 0;
       background: rgba(0, 0, 0, 0.4);
-      filter: blur(5px); /* Blur the background image */
-      z-index: -1; /* Ensure the overlay is behind the content */
+      filter: blur(5px);
+      z-index: -1;
     }
 
     .hero h1 {
@@ -103,18 +98,12 @@
       color: white;
     }
 
-    /* Section Styles */
     section {
       padding: 50px 20px;
       text-align: center;
     }
 
-    .about, .bio, .projects, .contact {
-      background: #ffffff;
-      margin-bottom: 20px;
-    }
-
-    .about h2, .bio h2, .projects h2, .contact h2 {
+    section h2 {
       color: #007bff;
       margin-bottom: 20px;
     }
@@ -138,47 +127,6 @@
       background: #0056b3;
     }
 
-    /* Contact Section */
-    .contact form {
-      max-width: 600px;
-      margin: 0 auto 20px;
-    }
-
-    .contact input,
-    .contact textarea {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    .contact button {
-      padding: 10px 20px;
-      background: #007bff;
-      color: white;
-      font-weight: bold;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-
-    .contact button:hover {
-      background: #0056b3;
-    }
-
-    .contact-details {
-      margin-top: 20px;
-      font-size: 1.1rem;
-    }
-
-    .contact-details p {
-      margin: 5px 0;
-    }
-
-    /* Footer */
     footer {
       background: #333;
       color: white;
@@ -200,13 +148,10 @@
 </head>
 <body>
   <header>
-    <div class="header-image">
-      <img src="info.jpg" alt="Infomatics Logo">
-    </div>
+    <img src="info.jpg" alt="Infomatics Logo">
   </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="hero">
+  <section class="hero">
     <h1>Welcome to Infomatics</h1>
     <p>Your source for professional insights, research, and innovation.</p>
     <a href="#bio" class="button-link">Explore Bio</a>
@@ -214,16 +159,14 @@
     <a href="#research" class="button-link">Research</a>
   </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
+  <section id="about">
     <h2>About Informatics</h2>
     <p>
       Informatics is a platform dedicated to sharing professional expertise, innovative research, and impactful solutions in the world of technology, science, and agriculture. Explore our sections to learn more.
     </p>
   </section>
 
-  <!-- Bio Section -->
-  <section id="bio" class="bio">
+  <section id="bio">
     <h2>Bio</h2>
     <p>
       Meet <strong>Anup Pudasaini</strong>, a passionate advocate for sustainable agriculture, community leadership, and research excellence. Explore the journey of an individual dedicated to transforming agriculture with modern technology and impactful initiatives.
@@ -231,8 +174,7 @@
     <a href="bio.html" class="button-link">Read Full Bio</a>
   </section>
 
-  <!-- Biochar Section -->
-  <section id="biochar" class="projects">
+  <section id="biochar">
     <h2>Biochar</h2>
     <p>
       Discover how biochar can revolutionize soil management and enhance agricultural productivity. Learn about our projects and research in this field.
@@ -240,8 +182,7 @@
     <a href="biochar.html" class="button-link">Explore Biochar</a>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="contact">
     <h2>Contact Us</h2>
     <p>Have questions or want to collaborate? We'd love to hear from you.</p>
     <form action="mailto:pudasainianoop100@gmail.com" method="post" enctype="text/plain">
