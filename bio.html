@@ -4,14 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Bio</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+    header nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .profile-pic {
+      max-width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      color: #007bff;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+    footer a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>My Profile</h1>
+    <h1>Welcome to My Website</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="bio.html">Bio</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
@@ -20,20 +82,27 @@
       <div class="container">
         <h2>About Me</h2>
         <img src="profile.JPG" alt="Profile Picture" class="profile-pic">
-        <p>Hello! I am a 24-year-old agriculture graduate from Tribhuvan University, IAAS Lamjung Campus. I specialize in research on Arbuscular Mycorrhizal Fungi (AMF) and its effects on soil properties and nutrient availability.</p>
+        <p>Hello! My name is [Your Name], and I am a passionate agriculture graduate from Tribhuvan University, IAAS Lamjung Campus. With a specialization in sustainable agriculture and a strong focus on research, I aim to revolutionize farming practices for a better future.</p>
+        <h3>My Journey</h3>
+        <p>I completed my Bachelor's in Agriculture with an impressive score of 80.08%. During my academic career, I conducted groundbreaking research on <strong>Arbuscular Mycorrhizal Fungi (AMF)</strong>, focusing on its impact on soil properties and nutrient availability, particularly phosphorus.</p>
+        <h3>Skills & Achievements</h3>
         <ul>
-          <li>Graduated with 80.08% in agriculture.</li>
-          <li>Led Model United Nations and GIS training initiatives.</li>
-          <li>Active participant in the Digital Farmer Literacy Program.</li>
+          <li>Leadership: Spearheaded <strong>Model United Nations</strong> and <strong>GIS training</strong> initiatives.</li>
+          <li>Technical Expertise: Conducted workshops on <strong>OpenStreetMap</strong> and mapping for disaster-prone areas.</li>
+          <li>Community Service: Active participant in the <strong>Digital Farmer Literacy Program</strong>, empowering farmers with digital tools.</li>
         </ul>
+        <h3>Current Goals</h3>
+        <p>I am currently preparing for the <strong>Public Service Commission (PSC) Nepal</strong> exam for the Agriculture Officer position, aiming to contribute to the agricultural development of Nepal.</p>
+        <h3>Gallery</h3>
+        <p>Here are some highlights of my work and initiatives:</p>
+        <img src="workshop1.JPG" alt="Workshop Image" style="max-width: 100%; border-radius: 10px; margin-bottom: 10px;">
+        <img src="event2.JPG" alt="Event Image" style="max-width: 100%; border-radius: 10px; margin-bottom: 10px;">
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 My Website. All rights reserved.</p>
+    <p>&copy; 2025 My Website. All rights reserved. | Designed by <a href="mailto:your_email@example.com">[Your Name]</a></p>
   </footer>
 </body>
 </html>
-
-
