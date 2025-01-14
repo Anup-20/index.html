@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Informatics - Welcome</title>
+  <title>Infomatics - Welcome</title>
+  <!-- Link to Google Fonts for Roboto -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" href="images/favico.ico" type="image/x-icon">
   <style>
     /* Global Styles */
     body {
@@ -17,7 +20,7 @@
 
     /* Header - Plain White Background */
     header {
-      background: #ffffff; /* Changed to white */
+      background: #ffffff;
       padding: 0;
       position: sticky;
       top: 0;
@@ -29,7 +32,7 @@
     }
 
     .header-image img {
-      max-width: 100%;
+      max-width: 150px; /* Logo smaller size */
       height: auto;
       display: block;
     }
@@ -69,7 +72,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+      background: rgba(0, 0, 0, 0.4);
       filter: blur(5px); /* Blur the background image */
       z-index: -1; /* Ensure the overlay is behind the content */
     }
@@ -194,53 +197,21 @@
       color: #ffffff;
     }
   </style>
-        /* Style for logo */
-        #logo {
-            width: 150px; /* Adjust the width to make the logo smaller */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        /* Additional styling for background */
-        .background {
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-blur: 5px;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-    </style>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Infomatics</title>
-    <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-</head>
-</head>
-<body>
-    <div class="background">
-        <!-- Logo with smaller size -->
-        <img src="info.jpg" id="logo" alt="Infomatics Logo">
-    </div>
-</body>
-</html>
-
 </head>
 <body>
   <header>
     <div class="header-image">
-      <img src="info.jpg" alt="Informatics Logo">
+      <img src="info.jpg" alt="Infomatics Logo">
     </div>
   </header>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
+    <h1>Welcome to Infomatics</h1>
     <p>Your source for professional insights, research, and innovation.</p>
     <a href="#bio" class="button-link">Explore Bio</a>
-     <a href="#Contact Us" class="button-link">Find Us</a>
-     <a href="#Research" class="button-link"> My Research Us</a>
+    <a href="#contact" class="button-link">Find Us</a>
+    <a href="#research" class="button-link">Research</a>
   </section>
 
   <!-- About Section -->
