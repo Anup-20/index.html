@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infomatics - Welcome</title>
-  <!-- Link to Google Fonts for Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Link to Google Fonts for Roboto and Open Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <style>
@@ -19,31 +19,30 @@
     }
 
     header {
-      background: #ffffff;
+      background: #007bff;
       padding: 20px 0;
       position: sticky;
       top: 0;
       z-index: 1000;
       text-align: center;
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
+      padding: 10px 50px;
     }
 
     header img {
-      max-width: 150px; /* Adjust the size as needed */
+      max-width: 150px;
       height: auto;
     }
 
     nav {
-      background: #ffffff;
-      text-align: center;
-      padding: 10px 0;
+      display: flex;
+      gap: 20px;
     }
 
     nav a {
-      margin: 0 15px;
-      color: black;
+      color: white;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
@@ -71,7 +70,6 @@
       right: 0;
       bottom: 0;
       background: rgba(0, 0, 0, 0.4);
-      filter: blur(5px);
       z-index: -1;
     }
 
@@ -130,6 +128,37 @@
       background: #0056b3;
     }
 
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .contact-form button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+
     footer {
       background: #333;
       color: white;
@@ -152,6 +181,12 @@
 <body>
   <header>
     <img src="info.jpg" alt="Infomatics Logo">
+    <nav>
+      <a href="#about">About</a>
+      <a href="#bio">Bio</a>
+      <a href="#biochar">Biochar</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
   <section class="hero">
@@ -188,7 +223,7 @@
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Have questions or want to collaborate? We'd love to hear from you.</p>
-    <form action="mailto:pudasainianoop100@gmail.com" method="post" enctype="text/plain">
+    <form action="mailto:pudasainianoop100@gmail.com" method="post" enctype="text/plain" class="contact-form">
       <input type="text" name="name" placeholder="Your Name" required>
       <input type="email" name="email" placeholder="Your Email" required>
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
