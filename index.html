@@ -15,17 +15,32 @@
       color: #333;
     }
 
+    /* Header */
     header {
       background: #007bff;
-      color: white;
-      padding: 20px 0;
+      padding: 0;
       position: sticky;
       top: 0;
       z-index: 1000;
+    }
+
+    .header-image {
       text-align: center;
     }
 
-    header nav a {
+    .header-image img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    nav {
+      background: #007bff;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
       margin: 0 15px;
       color: white;
       text-decoration: none;
@@ -33,7 +48,7 @@
       transition: color 0.3s ease;
     }
 
-    header nav a:hover {
+    nav a:hover {
       color: #ffcc00;
     }
 
@@ -107,6 +122,46 @@
       background: #0056b3;
     }
 
+    /* Contact Section */
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto 20px;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+
+    .contact button {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .contact button:hover {
+      background: #0056b3;
+    }
+
+    .contact-details {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    .contact-details p {
+      margin: 5px 0;
+    }
+
     /* Footer */
     footer {
       background: #333;
@@ -129,16 +184,16 @@
 </head>
 <body>
   <header>
-  <div class="header-image">
-    <img src="info.jpg" alt="Informatics Logo">
-  </div>
-  <nav>
-    <a href="#hero">Home</a>
-    <a href="#bio">Bio</a>
-    <a href="#biochar">Biochar</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
+    <div class="header-image">
+      <img src="info.png" alt="Informatics Logo">
+    </div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#bio">Bio</a>
+      <a href="#biochar">Biochar</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
@@ -173,26 +228,22 @@
     <a href="biochar.html" class="button-link">Explore Biochar</a>
   </section>
 
- <section id="contact" class="contact">
-  <h2>Contact Us</h2>
-  <p>Have questions or want to collaborate? We'd love to hear from you.</p>
-
-  <!-- Contact Form -->
-  <form action="mailto:pudasainianoop100@gmail.com" method="post" enctype="text/plain">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-
-  <!-- Contact Details -->
-  <div class="contact-details">
-    <p><strong>Email:</strong> pudasainianoop100@gmail.com</p>
-    <p><strong>Phone:</strong> +977-9812345678</p>
-    <p><strong>Location:</strong> Kathmandu, Nepal</p>
-  </div>
-</section>
-
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to collaborate? We'd love to hear from you.</p>
+    <form action="mailto:pudasainianoop100@gmail.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div class="contact-details">
+      <p><strong>Email:</strong> pudasainianoop100@gmail.com</p>
+      <p><strong>Phone:</strong> +977-9812345678</p>
+      <p><strong>Location:</strong> Kathmandu, Nepal</p>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Informatics. All rights reserved. | Designed by <a href="mailto:pudasainianoop100@gmail.com">Anup Pudasaini</a></p>
