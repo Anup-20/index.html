@@ -15,9 +15,9 @@
       color: #333;
     }
 
-    /* Header */
+    /* Header - Plain White Background */
     header {
-      background: #007bff;
+      background: #ffffff; /* Changed to white */
       padding: 0;
       position: sticky;
       top: 0;
@@ -35,14 +35,14 @@
     }
 
     nav {
-      background: #007bff;
+      background: #ffffff;
       text-align: center;
       padding: 10px 0;
     }
 
     nav a {
       margin: 0 15px;
-      color: white;
+      color: black;
       text-decoration: none;
       font-weight: bold;
       transition: color 0.3s ease;
@@ -59,6 +59,19 @@
       color: white;
       background: url('hero_background.jpg') no-repeat center center/cover;
       min-height: 400px;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.4); /* Semi-transparent overlay */
+      filter: blur(5px); /* Blur the background image */
+      z-index: -1; /* Ensure the overlay is behind the content */
     }
 
     .hero h1 {
@@ -185,7 +198,7 @@
 <body>
   <header>
     <div class="header-image">
-      <img src="images/info.jpg" alt="Informatics Logo">
+      <img src="info.png" alt="Informatics Logo">
     </div>
     <nav>
       <a href="#hero">Home</a>
@@ -197,7 +210,6 @@
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
-    <h1>Informatics</h1>
     <p>Your source for professional insights, research, and innovation.</p>
     <a href="#bio" class="button-link">Explore Bio</a>
   </section>
@@ -240,7 +252,7 @@
     </form>
     <div class="contact-details">
       <p><strong>Email:</strong> pudasainianoop100@gmail.com</p>
-      <p><strong>Phone:</strong> +977-9861037714</p>
+      <p><strong>Phone:</strong> +977-9812345678</p>
       <p><strong>Location:</strong> Kathmandu, Nepal</p>
     </div>
   </section>
