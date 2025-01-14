@@ -3,39 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Infomatics</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Informatics - Welcome</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #ffffff, #e6f7ff);
+      color: #333;
+    }
+
+    header {
+      background: #007bff;
+      color: white;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    header nav a {
+      margin: 0 15px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    header nav a:hover {
+      color: #ffcc00;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+      color: white;
+      background: url('hero_background.jpg') no-repeat center center/cover;
+      min-height: 400px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin: 20px 0;
+    }
+
+    .hero a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #ffcc00;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+
+    .hero a:hover {
+      background: #ff6600;
+      color: white;
+    }
+
+    /* Section Styles */
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .about, .bio, .projects, .contact {
+      background: #ffffff;
+      margin-bottom: 20px;
+    }
+
+    .about h2, .bio h2, .projects h2, .contact h2 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+    }
+
+    .button-link {
+      padding: 10px 20px;
+      background: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .button-link:hover {
+      background: #0056b3;
+    }
+
+    /* Footer */
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+  </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Infomatics</h1>
+    <h1>Welcome to Informatics</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="bio.html">Bio</a>
-    </nav>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="biochar.html">Biochar</a></li>
-      </ul>
+      <a href="#hero">Home</a>
+      <a href="#bio">Bio</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
   </header>
 
-  <main>
-    <section id="about">
-      <h2>About Us</h2>
-      <p>Welcome to Infomatics! We provide information and services to enhance your knowledge and skills. Explore agriculture, history, policy dialogues, and more.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>Informatics</h1>
+    <p>Your source for professional insights, research, and innovation.</p>
+    <a href="#bio" class="button-link">Explore More</a>
+  </section>
 
-    <section id="services">
-      <h2>Our Services</h2>
-      <ul>
-        <li>Agriculture</li>
-        <li>History</li>
-        <li>Policy Dialogue</li>
-        <li>Panel Discussion</li>
-        <li>Content Creation</li>
-      </ul
-
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Informatics</h2>
+    <p>
+      Informatics is a platform dedicated to sharing professional expertise, innovative research, and impactful solutions in the world of technology, scien
