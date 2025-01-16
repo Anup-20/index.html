@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="styles.css">
   <!-- AdSense Script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9129209114925832" crossorigin="anonymous"></script>
-  <!-- Inline CSS for header image size and fixed header -->
+  <!-- Inline CSS -->
   <style>
     body {
       font-family: 'Roboto', sans-serif;
@@ -26,10 +26,23 @@
       padding: 100px 20px;
       animation: fadeIn 2s;
     }
-    .hero h1, .hero p {
-      background-color: rgba(0, 0, 0, 0.5);
+    .hero h1 {
+      margin-bottom: 20px;
+      font-size: 3em;
+      background-color: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      animation: colorGlow 2s infinite alternate;
+    }
+    .hero p {
+      margin-bottom: 30px;
+      font-size: 1.5em;
+      background-color: rgba(0, 0, 0, 0.4);
       display: inline-block;
       padding: 10px;
+      border-radius: 5px;
+      animation: slideDown 1.5s ease-out;
     }
     .button-link {
       display: inline-block;
@@ -39,18 +52,23 @@
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s ease, transform 0.2s ease;
     }
     .button-link:hover {
       background-color: #4a7c85;
+      transform: scale(1.05);
     }
     section {
       padding: 60px 20px;
       animation: slideIn 1s ease-out;
-      background-color: #fff;
+      background-color: #f7f7f7;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
+      border: 1px solid #ddd;
+    }
+    section:hover {
+      background-color: #f3f8fa;
     }
     footer {
       background: #1e5f74;
@@ -84,6 +102,14 @@
       from { transform: translateY(20px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes colorGlow {
+      from { background-color: rgba(0, 0, 0, 0.6); }
+      to { background-color: rgba(30, 95, 116, 0.8); }
+    }
   </style>
 </head>
 <body>
@@ -101,15 +127,12 @@
     <p>
       Infomatics is a Kathmandu-based platform dedicated to sharing professional expertise, innovative research, and impactful solutions in the world of technology, science, and agriculture. Our mission is to bridge the gap between cutting-edge research and practical applications, empowering individuals and communities to thrive.
     </p>
-    <p>
-      What We Do:
-      <ul>
-        <li>Conduct and share groundbreaking research in various fields.</li>
-        <li>Provide insights and solutions for sustainable agriculture.</li>
-        <li>Foster community leadership and development through technology.</li>
-        <li>Collaborate with experts and organizations to drive innovation.</li>
-      </ul>
-    </p>
+    <ul>
+      <li>Conduct and share groundbreaking research in various fields.</li>
+      <li>Provide insights and solutions for sustainable agriculture.</li>
+      <li>Foster community leadership and development through technology.</li>
+      <li>Collaborate with experts and organizations to drive innovation.</li>
+    </ul>
     <p>
       At Infomatics, we believe in the power of knowledge and innovation to create a better future. Join us on our journey to explore new horizons and make a positive impact on the world.
     </p>
