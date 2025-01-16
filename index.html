@@ -14,21 +14,7 @@
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9129209114925832" crossorigin="anonymous"></script>
   <!-- Inline CSS for header image size and fixed header -->
   <style>
-    header {
-      position: fixed;
-      width: 100%;
-      top: 0;
-      background: #fff;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-      z-index: 1000;
-      transition: background-color 0.5s ease;
-    }
-    header img {
-      width: 50px; /* Adjust the width as needed */
-      height: auto; /* Maintain the aspect ratio */
-    }
     body {
-      padding-top: 80px; /* Adjust based on header height */
       font-family: 'Roboto', sans-serif;
       background-color: #f9f9f9;
       transition: background-color 0.5s ease;
@@ -57,30 +43,6 @@
       padding: 60px 20px;
       animation: slideIn 1s ease-out;
     }
-    .image-box {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin: 20px 0;
-    }
-    .image-box a {
-      width: 30%;
-      margin: 10px;
-      text-decoration: none;
-      color: #000;
-      transition: transform 0.3s ease;
-    }
-    .image-box a:hover {
-      transform: scale(1.05);
-    }
-    .image-box img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .image-box h3 {
-      text-align: center;
-      margin: 10px 0;
-    }
     footer {
       background: #1e5f74;
       color: #fff;
@@ -97,6 +59,16 @@
     .social-links a:hover {
       color: #4a7c85;
     }
+    .contact-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-logo img {
+      width: 50px;
+      height: auto;
+      margin-left: 10px;
+    }
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
@@ -108,23 +80,18 @@
   </style>
 </head>
 <body>
-  <header>
-    <img src="info.png" alt="Infomatics Logo">
-    <nav>
-      <a href="#about">About</a>
-      <a href="#bio">Bio</a>
-      <a href="#biochar">Biochar</a>
-      <a href="#contact">Contact</a>
-      <a href="research/index.html">Research</a>
-    </nav>
-  </header>
-
   <section class="hero">
     <h1>Welcome to Infomatics</h1>
     <p>Your source for professional insights, research, and innovation.</p>
     <a href="#bio" class="button-link">Explore Bio</a>
     <a href="#contact" class="button-link">Find Us</a>
-    <a href="research/index.html" class="button-link">Research</a>
+    <a href="research/research.html" class="button-link">Research</a>
+  </section>
+
+  <section id="research">
+    <h2>Research</h2>
+    <p>Explore our latest research on the effect of AMF and phosphorus on soil nutrient availability for potato growth.</p>
+    <a href="research/research.html" class="button-link">Read Full Research</a>
   </section>
 
   <section id="about">
@@ -136,22 +103,16 @@
 
   <section id="bio">
     <h2>Bio</h2>
-    <div class="image-box">
-      <a href="bio.html">
-        <img src="bio_image.webp" alt="Bio Image">
-        <h3>Read Full Bio</h3>
-      </a>
-    </div>
+    <p>
+      Meet <strong>Anup Pudasaini</strong>, a passionate advocate for sustainable agriculture, community leadership, and research excellence. Explore the journey of an individual dedicated to transforming agriculture with modern technology and impactful initiatives.
+    </p>
   </section>
 
   <section id="biochar">
     <h2>Biochar</h2>
-    <div class="image-box">
-      <a href="biochar.html">
-        <img src="biochar_image.webp" alt="Biochar Image">
-        <h3>Explore Biochar</h3>
-      </a>
-    </div>
+    <p>
+      Discover how biochar can revolutionize soil management and enhance agricultural productivity. Learn about our projects and research in this field.
+    </p>
   </section>
 
   <section id="contact">
@@ -168,15 +129,9 @@
       <p><strong>Phone:</strong> +977-9861037714</p>
       <p><strong>Location:</strong> Kathmandu, Nepal</p>
     </div>
-  </section>
-
-  <section id="research">
-    <h2>Research</h2>
-    <div class="image-box">
-      <a href="research/index.html">
-        <img src="research_image.webp" alt="Research Image">
-        <h3>Read Full Research</h3>
-      </a>
+    <div class="contact-logo">
+      <h2>Contact Us</h2>
+      <img src="info.png" alt="Infomatics Logo">
     </div>
   </section>
 
