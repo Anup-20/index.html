@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infomatics - Welcome</title>
-  <!-- Link to Google Fonts for Roboto and Open Sans -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -12,142 +12,135 @@
   <link rel="stylesheet" href="styles.css">
   <!-- AdSense Script -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9129209114925832" crossorigin="anonymous"></script>
-  <!-- Inline CSS -->
   <style>
     body {
       font-family: 'Roboto', sans-serif;
       background-color: #f9f9f9;
-      transition: background-color 0.5s ease;
     }
     .hero {
       background: url('hero_background.webp') no-repeat center center/cover;
       color: #fff;
       text-align: center;
       padding: 100px 20px;
-      animation: fadeIn 2s;
     }
     .hero h1 {
-      margin-bottom: 10px;
-      animation: slideDown 1s ease-out;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     .hero p {
-      margin-bottom: 20px;
       font-size: 1.2em;
-      animation: fadeIn 1s ease-in;
+      margin-bottom: 30px;
     }
     .link-row {
       display: flex;
       justify-content: center;
       gap: 15px;
-      margin-top: 15px;
     }
     .button-link {
-      display: inline-block;
-      padding: 10px 20px;
+      padding: 12px 25px;
       background-color: #1e5f74;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s ease;
+      transition: background-color 0.3s;
+      font-weight: bold;
     }
     .button-link:hover {
       background-color: #4a7c85;
     }
     section {
       padding: 60px 20px;
+      max-width: 900px;
+      margin: 20px auto;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background: #fff;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    section h2 {
+      font-size: 1.8em;
       margin-bottom: 20px;
     }
-    #about {
-      background-color: rgba(255, 204, 153, 0.25); /* Soft pastel orange */
-    }
-    #bio {
-      background-color: rgba(153, 204, 255, 0.25); /* Soft pastel blue */
-    }
-    #research {
-      background-color: rgba(204, 255, 204, 0.25); /* Soft pastel green */
-    }
-    #biochar {
-      background-color: rgba(255, 204, 204, 0.25); /* Soft pastel pink */
-    }
-    #contact {
-      background-color: rgba(255, 255, 204, 0.25); /* Soft pastel yellow */
+    section p {
+      line-height: 1.6;
+      font-size: 1.1em;
     }
     footer {
       background: #1e5f74;
       color: #fff;
       text-align: center;
-      padding: 20px 0;
+      padding: 20px;
       margin-top: 20px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
     .social-links a {
       color: #fff;
       margin: 0 10px;
       text-decoration: none;
-      transition: color 0.3s ease;
+      font-weight: bold;
     }
     .social-links a:hover {
-      color: #4a7c85;
+      text-decoration: underline;
     }
     .footer-logo {
       width: 100px;
       height: auto;
-      margin-left: 20px;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideDown {
-      from { transform: translateY(-20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
     }
   </style>
 </head>
 <body>
   <section class="hero">
     <h1>Welcome to Infomatics</h1>
-    <p>Your source for professional insights, research, and innovation.</p>
+    <p>Your ultimate platform for professional insights, groundbreaking research, and innovative solutions.</p>
     <div class="link-row">
       <a href="#about" class="button-link">About Us</a>
-      <a href="#bio" class="button-link">Explore Bio</a>
+      <a href="#bio" class="button-link">Bio</a>
       <a href="#research" class="button-link">Research</a>
-      <a href="#contact" class="button-link">Find Us</a>
+      <a href="#biochar" class="button-link">Biochar</a>
+      <a href="#contact" class="button-link">Contact Us</a>
     </div>
   </section>
 
   <section id="about">
     <h2>About Infomatics</h2>
-    <p>Infomatics is a Kathmandu-based platform dedicated to sharing professional expertise, innovative research, and impactful solutions in the world of technology, science, and agriculture.</p>
+    <p>Infomatics is a Kathmandu-based platform dedicated to sharing professional expertise in technology, agriculture, and science. We focus on providing solutions that address global challenges while fostering sustainable growth and innovation.</p>
+    <p>Our mission is to bridge the gap between research and real-world application by providing detailed analyses, insightful blogs, and interactive tools.</p>
+    <a href="about_details.html" class="button-link">Read More</a>
   </section>
 
   <section id="bio">
     <h2>Bio</h2>
-    <p>Meet <strong>Anup Pudasaini</strong>, a passionate advocate for sustainable agriculture and research excellence.</p>
+    <p>Hi, I'm <strong>Anup Pudasaini</strong>, a passionate advocate for sustainable agriculture and research. With a background in agronomy and a dedication to advancing sustainable practices, I strive to make a positive impact on global agricultural systems.</p>
+    <p>From conducting innovative research to mentoring future agricultural leaders, I aim to integrate technology and tradition for a greener future.</p>
+    <a href="bio_details.html" class="button-link">Read More</a>
   </section>
 
   <section id="research">
     <h2>Research</h2>
-    <p>Explore our latest research on the effect of AMF and phosphorus on soil nutrient availability for potato growth.</p>
+    <p>Our research focuses on understanding the role of Arbuscular Mycorrhizal Fungi (AMF) and phosphorus in improving soil nutrient availability for potatoes. By exploring the interplay between these factors, we aim to enhance agricultural productivity and sustainability.</p>
+    <p>Key projects also include climate-resilient farming strategies and the potential of biochar in soil health improvement.</p>
+    <a href="research_details.html" class="button-link">Read More</a>
   </section>
 
   <section id="biochar">
     <h2>Biochar</h2>
-    <p>Discover how biochar can revolutionize soil management and enhance agricultural productivity.</p>
+    <p>Biochar is a game-changing tool in sustainable agriculture, offering numerous benefits such as improved soil fertility, carbon sequestration, and enhanced crop yields. We explore its applications in modern farming systems and its impact on global food security.</p>
+    <a href="biochar_details.html" class="button-link">Read More</a>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Have questions or want to collaborate? We'd love to hear from you.</p>
+    <p>We'd love to hear from you! Whether you have questions, feedback, or collaboration ideas, reach out to us through the details below:</p>
+    <ul>
+      <li>Email: <a href="mailto:pudasainianoop100@gmail.com">pudasainianoop100@gmail.com</a></li>
+      <li>Phone: +977-123-456-7890</li>
+      <li>Address: Kathmandu, Nepal</li>
+    </ul>
+    <a href="contact_form.html" class="button-link">Get in Touch</a>
   </section>
 
   <footer>
     <img src="info.png" alt="Infomatics Logo" class="footer-logo">
-    <p>&copy; 2025 Infomatics. All rights reserved. | Designed by <a href="mailto:pudasainianoop100@gmail.com">Anup Pudasaini</a></p>
+    <p>&copy; 2025 Infomatics. All rights reserved. Designed by <a href="mailto:pudasainianoop100@gmail.com">Anup Pudasaini</a></p>
     <div class="social-links">
       <a href="https://www.facebook.com" target="_blank">Facebook</a>
       <a href="https://www.twitter.com" target="_blank">Twitter</a>
