@@ -5,76 +5,164 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anup Pudasaini - My Bio</title>
   <style>
+    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
+      background: #f9f9f9;
       color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
     }
+
+    /* Header */
     header {
-      background: #007bff;
+      background: linear-gradient(90deg, #007bff, #0056b3);
       color: white;
-      padding: 20px 0;
       text-align: center;
+      padding: 20px 0;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      animation: fadeIn 1s ease-in-out;
     }
     header nav a {
       margin: 0 15px;
       color: white;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1.1rem;
+      animation: slideIn 1s ease-in-out;
     }
     header nav a:hover {
+      color: #ffdd57;
       text-decoration: underline;
     }
+
+    /* Main Section */
     main {
-      padding: 20px;
+      padding: 30px 20px;
     }
     .container {
-      max-width: 900px;
+      max-width: 1100px;
       margin: 0 auto;
       background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+      animation: fadeInUp 1s ease-in-out;
+    }
+    h2, h3, h4 {
+      color: #0056b3;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    h3 {
+      font-size: 1.5rem;
+    }
+    h4 {
+      font-size: 1.3rem;
+    }
+    p {
+      margin-bottom: 20px;
+      font-size: 1rem;
+    }
+
+    /* Profile Picture */
+    .profile-section {
+      text-align: center;
+      margin-bottom: 30px;
     }
     .profile-pic {
-      max-width: 150px;
+      max-width: 200px;
       height: auto;
       border-radius: 50%;
-      display: block;
-      margin: 0 auto 20px;
+      border: 5px solid #007bff;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease-in-out;
     }
-    h1, h2, h3 {
-      color: #007bff;
+    .profile-pic:hover {
+      transform: scale(1.1);
     }
+
+    /* Lists */
     ul {
       list-style: disc;
-      margin-left: 20px;
+      margin-left: 25px;
     }
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+
+    /* Gallery */
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
     }
     .gallery img {
       width: 100%;
       height: auto;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
     }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes slideIn {
+      from {
+        transform: translateX(-20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    /* Footer */
     footer {
       background: #333;
       color: white;
       text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
+      padding: 15px 0;
+      margin-top: 40px;
     }
     footer a {
-      color: #007bff;
+      color: #ffdd57;
       text-decoration: none;
+      font-weight: bold;
     }
     footer a:hover {
+      color: white;
       text-decoration: underline;
     }
   </style>
@@ -89,42 +177,44 @@
   </header>
 
   <main>
-    <section id="bio">
-      <div class="container">
-        <h2>About Me</h2>
-        <img src="profile.JPG" alt="Profile Picture" class="profile-pic">
-        <p>Hello! I am <strong>Anup Pudasaini</strong>, an agriculture graduate from <strong>Tribhuvan University, IAAS Lamjung Campus</strong>, and a passionate advocate for sustainable agricultural practices. I have a keen interest in integrating technology and community-driven initiatives to modernize agriculture and uplift farming communities in Nepal. I am based in Kathmandu, Nepal, where I actively contribute to various projects and research activities.</p>
+    <section id="bio" class="container">
+      <div class="profile-section">
+        <img src="profile.JPG" alt="Anup Pudasaini's Profile Picture" class="profile-pic">
+      </div>
+      <h2>About Me</h2>
+      <p>Hello! I am <strong>Anup Pudasaini</strong>, an agriculture graduate from <strong>Tribhuvan University, IAAS Lamjung Campus</strong>. I am passionate about sustainable agriculture, integrating technology, and empowering communities to modernize farming practices in Nepal.</p>
 
-        <h3>Professional Journey</h3>
-        <p>Over the years, I have taken on significant leadership roles and implemented impactful programs:</p>
-        <ul>
-          <li><strong>Former President:</strong> Youth Thinkers' Society - Lamjung (2023-2024).</li>
-          <li><strong>Program Coordinator:</strong> Agri Mappers - Lamjung Chapter (2020-2023).</li>
-          <li>Organizer of <strong>Model United Nations (MUN)</strong>, fostering leadership and global awareness among youth.</li>
-        </ul>
+      <h3>Professional Journey</h3>
+      <ul>
+        <li><strong>Former President:</strong> Youth Thinkers' Society - Lamjung (2023-2024)</li>
+        <li><strong>Program Coordinator:</strong> Agri Mappers - Lamjung Chapter (2020-2023)</li>
+        <li>Organizer of <strong>Model United Nations (MUN)</strong>, fostering leadership among youth.</li>
+      </ul>
 
-       <h3>Research & Academic Highlights</h3> <p>My academic journey has been marked by a strong focus on sustainable agriculture and innovative research. Here are some key highlights:</p> <h4>Academic Studies</h4> <ul> <li><strong>June 2017 - May 2019:</strong> Xavier International College, Kalopul, Kathmandu</li> <li><strong>March 2020 - October 2024:</strong> Bachelor's in Applied Science, Institute of Agriculture and Animal Science, Tribhuvan University, IAAS Lamjung Campus</li> </ul> <h4>Research Projects</h4> <ul> <li><strong>Sustainable Soil Management:</strong> Focused on integrating Arbuscular Mycorrhizal Fungi (AMF) with phosphorus to enhance soil fertility and crop yield in potato cultivation. This research was funded by NAST and the Ministry of Forest and Environment.</li> </ul>
-        <h3>Key Initiatives</h3>
-        <ul>
-          <li><strong>Suicide Awareness Training:</strong> Organized in collaboration with <strong>KOSHISH Nepal</strong> to address mental health issues.</li>
-          <li><strong>Agri Talk Series:</strong> A panel discussion engaging farmers, professors, local stakeholders, and researchers to address agricultural challenges.</li>
-          <li><strong>School MUN:</strong> Empowered children with problem-solving and leadership skills through simulated United Nations sessions.</li>
-          <li>Collaborated with <strong>US Embassy Nepal</strong> and <strong>FAO Nepal</strong> to conduct impactful programs focusing on agriculture and youth development.</li>
-        </ul>
+      <h3>Research & Academic Highlights</h3>
+      <h4>Academic Studies</h4>
+      <ul>
+        <li><strong>Xavier International College:</strong> Science (2017-2019)</li>
+        <li><strong>Tribhuvan University:</strong> Bachelor's in Agriculture (2020-2024)</li>
+      </ul>
+      <h4>Research Projects</h4>
+      <ul>
+        <li><strong>Soil Management:</strong> AMF and phosphorus integration to improve potato cultivation (funded by NAST).</li>
+      </ul>
 
-        <h3>Current Initiatives</h3>
-        <p>As the leader of the <strong>Digital Farmer Literacy Program</strong>, I am actively educating farmers on utilizing digital tools to improve productivity, embrace modern agricultural practices, and make informed decisions for sustainable farming.</p>
+      <h3>Key Initiatives</h3>
+      <ul>
+        <li><strong>Suicide Awareness Training:</strong> In collaboration with KOSHISH Nepal.</li>
+        <li><strong>Agri Talk Series:</strong> Panel discussions with farmers and stakeholders.</li>
+        <li><strong>School MUN:</strong> Leadership training for children through UN simulations.</li>
+      </ul>
 
-        <h3>Gallery</h3>
-        <div class="gallery">
-          <img src="mun_event.jpg" alt="Model United Nations Event">
-          <img src="agri_talk.jpg" alt="Agri Talk Series Panel Discussion">
-          <img src="school_mun.jpg" alt="School MUN Program">
-          <img src="digital_farming.jpg" alt="Digital Farming Initiative">
-        </div>
-
-        <h3>Vision</h3>
-        <p>My vision is to revolutionize Nepal's agricultural sector by integrating modern technologies, fostering collaborations, and empowering farming communities with knowledge and sustainable practices. Through leadership and action, I aim to contribute to a resilient and prosperous agricultural future for Nepal.</p>
+      <h3>Gallery</h3>
+      <div class="gallery">
+        <img src="mun_event.jpg" alt="Model United Nations Event">
+        <img src="agri_talk.jpg" alt="Agri Talk Series Panel Discussion">
+        <img src="school_mun.jpg" alt="School MUN Program">
+        <img src="digital_farming.jpg" alt="Digital Farming Initiative">
       </div>
     </section>
   </main>
