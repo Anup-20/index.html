@@ -27,48 +27,52 @@
       animation: fadeIn 2s;
     }
     .hero h1 {
-      margin-bottom: 20px;
-      font-size: 3em;
-      background-color: rgba(0, 0, 0, 0.6);
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 5px;
-      animation: colorGlow 2s infinite alternate;
+      margin-bottom: 10px;
+      animation: slideDown 1s ease-out;
     }
     .hero p {
-      margin-bottom: 30px;
-      font-size: 1.5em;
-      background-color: rgba(0, 0, 0, 0.4);
-      display: inline-block;
-      padding: 10px;
-      border-radius: 5px;
-      animation: slideDown 1.5s ease-out;
+      margin-bottom: 20px;
+      font-size: 1.2em;
+      animation: fadeIn 1s ease-in;
+    }
+    .link-row {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 15px;
     }
     .button-link {
       display: inline-block;
-      margin: 10px;
       padding: 10px 20px;
       background-color: #1e5f74;
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.3s ease, transform 0.2s ease;
+      transition: background-color 0.3s ease;
     }
     .button-link:hover {
       background-color: #4a7c85;
-      transform: scale(1.05);
     }
     section {
       padding: 60px 20px;
-      animation: slideIn 1s ease-out;
-      background-color: #f7f7f7;
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       margin-bottom: 20px;
-      border: 1px solid #ddd;
     }
-    section:hover {
-      background-color: #f3f8fa;
+    #about {
+      background-color: rgba(255, 204, 153, 0.25); /* Soft pastel orange */
+    }
+    #bio {
+      background-color: rgba(153, 204, 255, 0.25); /* Soft pastel blue */
+    }
+    #research {
+      background-color: rgba(204, 255, 204, 0.25); /* Soft pastel green */
+    }
+    #biochar {
+      background-color: rgba(255, 204, 204, 0.25); /* Soft pastel pink */
+    }
+    #contact {
+      background-color: rgba(255, 255, 204, 0.25); /* Soft pastel yellow */
     }
     footer {
       background: #1e5f74;
@@ -98,17 +102,9 @@
       from { opacity: 0; }
       to { opacity: 1; }
     }
-    @keyframes slideIn {
-      from { transform: translateY(20px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
-    }
     @keyframes slideDown {
       from { transform: translateY(-20px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
-    }
-    @keyframes colorGlow {
-      from { background-color: rgba(0, 0, 0, 0.6); }
-      to { background-color: rgba(30, 95, 116, 0.8); }
     }
   </style>
 </head>
@@ -116,65 +112,37 @@
   <section class="hero">
     <h1>Welcome to Infomatics</h1>
     <p>Your source for professional insights, research, and innovation.</p>
-    
-    <a href="#about" class="button-link">About Us</a>
-    <a href="#bio" class="button-link">Explore Bio</a>
-    <a href="#contact" class="button-link">Find Us</a>
-    <a href="research/research.html" class="button-link">Research</a>
+    <div class="link-row">
+      <a href="#about" class="button-link">About Us</a>
+      <a href="#bio" class="button-link">Explore Bio</a>
+      <a href="#research" class="button-link">Research</a>
+      <a href="#contact" class="button-link">Find Us</a>
+    </div>
   </section>
 
   <section id="about">
     <h2>About Infomatics</h2>
-    <p>
-      Infomatics is a Kathmandu-based platform dedicated to sharing professional expertise, innovative research, and impactful solutions in the world of technology, science, and agriculture. Our mission is to bridge the gap between cutting-edge research and practical applications, empowering individuals and communities to thrive.
-    </p>
-    <ul>
-      <li>Conduct and share groundbreaking research in various fields.</li>
-      <li>Provide insights and solutions for sustainable agriculture.</li>
-      <li>Foster community leadership and development through technology.</li>
-      <li>Collaborate with experts and organizations to drive innovation.</li>
-    </ul>
-    <p>
-      At Infomatics, we believe in the power of knowledge and innovation to create a better future. Join us on our journey to explore new horizons and make a positive impact on the world.
-    </p>
+    <p>Infomatics is a Kathmandu-based platform dedicated to sharing professional expertise, innovative research, and impactful solutions in the world of technology, science, and agriculture.</p>
   </section>
 
   <section id="bio">
     <h2>Bio</h2>
-    <p>
-      Meet <strong>Anup Pudasaini</strong>, a passionate advocate for sustainable agriculture, community leadership, and research excellence. Explore the journey of an individual dedicated to transforming agriculture with modern technology and impactful initiatives.
-    </p>
-    <a href="bio.html" class="button-link">Read More</a>
+    <p>Meet <strong>Anup Pudasaini</strong>, a passionate advocate for sustainable agriculture and research excellence.</p>
   </section>
 
   <section id="research">
     <h2>Research</h2>
     <p>Explore our latest research on the effect of AMF and phosphorus on soil nutrient availability for potato growth.</p>
-    <a href="research.html" class="button-link">Read Full Research</a>
   </section>
 
   <section id="biochar">
     <h2>Biochar</h2>
-    <p>
-      Discover how biochar can revolutionize soil management and enhance agricultural productivity. Learn about our projects and research in this field.
-    </p>
-    <a href="biochar.html" class="button-link">Read More</a>
+    <p>Discover how biochar can revolutionize soil management and enhance agricultural productivity.</p>
   </section>
 
   <section id="contact">
     <h2>Contact Us</h2>
     <p>Have questions or want to collaborate? We'd love to hear from you.</p>
-    <form action="mailto:pudasainianoop100@gmail.com" method="post" enctype="text/plain" class="contact-form">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <div class="contact-details">
-      <p><strong>Email:</strong> pudasainianoop100@gmail.com</p>
-      <p><strong>Phone:</strong> +977-9861037714</p>
-      <p><strong>Location:</strong> Kathmandu, Nepal</p>
-    </div>
   </section>
 
   <footer>
