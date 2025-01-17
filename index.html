@@ -83,6 +83,20 @@
       flex-direction: column;
       align-items: center;
     }
+    .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .footer-logo {
+      width: 80px;
+      height: auto;
+      margin-right: 20px;
+    }
+    .footer-text {
+      text-align: center;
+    }
     .social-links {
       margin-top: 10px;
     }
@@ -94,11 +108,6 @@
     }
     .social-links a:hover {
       color: #4a7c85;
-    }
-    .footer-logo {
-      width: 80px;
-      height: auto;
-      margin-bottom: 10px;
     }
     @keyframes fadeIn {
       from { opacity: 0; }
@@ -185,12 +194,16 @@
   </section>
 
   <footer>
-    <img src="info.png" alt="Infomatics Logo" class="footer-logo">
-    <p>&copy; 2025 Infomatics. All rights reserved. | Designed by <a href="mailto:pudasainianoop100@gmail.com">Anup Pudasaini</a></p>
-    <div class="social-links">
-      <a href="https://www.facebook.com" target="_blank">Facebook</a>
-      <a href="https://www.twitter.com" target="_blank">Twitter</a>
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+    <div class="footer-content">
+      <img src="info.png" alt="Infomatics Logo" class="footer-logo">
+      <div class="footer-text">
+        <p>&copy; 2025 Infomatics. All rights reserved. | Designed by <a href="mailto:pudasainianoop100@gmail.com" style="color: white;">Anup Pudasaini</a></p>
+        <div class="social-links">
+          <a href="https://www.facebook.com" target="_blank">Facebook</a>
+          <a href="https://www.twitter.com" target="_blank">Twitter</a>
+          <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </footer>
 </body>
