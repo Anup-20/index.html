@@ -18,7 +18,7 @@
 
     /* Header */
     header {
-      background: linear-gradient(90deg, #007bff, #0056b3);
+      background: linear-gradient(90deg, #6baed6, #3182bd);
       color: white;
       text-align: center;
       padding: 20px 0;
@@ -56,7 +56,7 @@
       animation: fadeInUp 1s ease-in-out;
     }
     h2, h3, h4 {
-      color: #0056b3;
+      color: #3182bd;
       margin-bottom: 15px;
     }
     h2 {
@@ -82,7 +82,7 @@
       max-width: 200px;
       height: auto;
       border-radius: 50%;
-      border: 5px solid #007bff;
+      border: 5px solid #6baed6;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       transition: transform 0.3s ease-in-out;
     }
@@ -155,6 +155,9 @@
       text-align: center;
       padding: 15px 0;
       margin-top: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
     footer a {
       color: #ffdd57;
@@ -165,11 +168,15 @@
       color: white;
       text-decoration: underline;
     }
+    .footer-logo {
+      width: 100px;
+      height: auto;
+      margin-left: 20px;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Welcome to Anup Pudasaini's Website</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="bio.html">Bio</a>
@@ -220,6 +227,7 @@
   </main>
 
   <footer>
+    <img src="info.png" alt="Infomatics Logo" class="footer-logo">
     <p>&copy; 2025 Anup Pudasaini. All rights reserved. | Designed by <a href="mailto:pudasainianoop100@gmail.com">Anup Pudasaini</a></p>
   </footer>
 </body>
