@@ -3,76 +3,169 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>A Detail insights on biochar and its application </title>
-  <link rel="stylesheet" href="styles.css"/> <!-- If you have a CSS file -->
+  <title>Biochar: A Sustainable Solution for Agriculture</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
   <style>
+    /* General Styles */
     body {
       font-family: 'Roboto', sans-serif;
-      line-height: 1.6;
+      line-height: 1.8;
       margin: 0;
       padding: 0;
-      background-color: #f0f8ff; /* Light blue background */
+      background-color: #f9f9f9;
       color: #333;
     }
-    header {
-      background: linear-gradient(to right, #4caf50, #8bc34a); /* Green gradient background */
-      color: #fff;
-      padding: 1rem 0;
-      text-align: center;
-      animation: fadeIn 2s ease-in-out;
+
+    h1, h2, h3 {
+      font-weight: 500;
+      color: #2c3e50;
     }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #4caf50, #2e7d32);
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
+      animation: fadeInDown 1.5s ease-in-out;
     }
+
     nav ul {
       list-style: none;
       padding: 0;
+      margin: 1rem 0 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
     }
+
     nav ul li {
-      display: inline;
-      margin: 0 10px;
+      margin: 0 15px;
     }
+
     nav ul li a {
       color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease-in-out;
+      font-weight: 500;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
+
     nav ul li a:hover {
-      color: #ffeb3b; /* Yellow on hover */
+      color: #ffeb3b;
+      transform: translateY(-3px);
     }
+
+    /* Main Content */
     main {
       padding: 2rem;
-      animation: fadeIn 2s ease-in-out;
+      max-width: 1200px;
+      margin: 0 auto;
     }
+
     section {
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      animation: fadeInUp 1s ease-in-out;
     }
+
     section h2 {
-      color: #4caf50; /* Green color for headings */
+      color: #4caf50;
       border-bottom: 2px solid #4caf50;
       padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
     }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    ul li {
+      margin-bottom: 0.8rem;
+    }
+
+    /* Footer */
     footer {
-      background: #4caf50;
+      background: #2e7d32;
       color: #fff;
       text-align: center;
-      padding: 1rem 0;
-      position: fixed;
-      width: 100%;
+      padding: 1.5rem 0;
+      position: relative;
       bottom: 0;
-      animation: fadeIn 2s ease-in-out;
+      width: 100%;
+      box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
     }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
+    }
+
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      main {
+        padding: 1rem;
+      }
+
+      section {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Biochar: A solution for Agriculture Sustainability </h1>
+    <h1>Biochar: A Sustainable Solution for Agriculture</h1>
     <nav>
       <ul>
         <li><a href="#what-is-biochar">What is Biochar?</a></li>
@@ -125,16 +218,14 @@
       <h2>References</h2>
       <p>1. Lehmann, J., &amp; Joseph, S. (2009). Biochar for environmental management: science and technology. Earthscan.</p>
       <p>2. Jeffery, S., et al. (2011). Biochar boosts tropical but not temperate crop yields. Environmental Research Letters, 6(2), 024004.</p>
-      <p>3. [Biochar - Wikipedia](https://en.wikipedia.org/wiki/Biochar)</p>
-      <p>4. [What is Biochar? - Regeneration International](https://regenerationinternational.org/2018/05/16/what-is-biochar/)</p>
-      <p>5. [Biochar | MIT Climate Portal](https://climate.mit.edu/explainers/biochar)</p>
+      <p>3. <a href="https://en.wikipedia.org/wiki/Biochar" target="_blank">Biochar - Wikipedia</a></p>
+      <p>4. <a href="https://regenerationinternational.org/2018/05/16/what-is-biochar/" target="_blank">What is Biochar? - Regeneration International</a></p>
+      <p>5. <a href="https://climate.mit.edu/explainers/biochar" target="_blank">Biochar | MIT Climate Portal</a></p>
     </section>
   </main>
 
   <footer>
     <p>&#169; 2024 Biochar Information. All rights reserved.</p>
   </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
