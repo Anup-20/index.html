@@ -1,181 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effect of Arbuscular Mycorrhizal Fungi on Soil Status</title>
-    <meta name="description" content="Explore the impact of Arbuscular Mycorrhizal Fungi (AMF) on soil health and potato growth in Nepal. Learn about sustainable agriculture practices and phosphorus fertilization.">
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.8;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            transition: background-color 0.5s ease;
-        }
-        header {
-            background: linear-gradient(90deg, #1e5f74, #4a7c85);
-            color: #fff;
-            padding: 2rem 0;
-            text-align: center;
-            animation: fadeIn 2s;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin: 0;
-        }
-        .container {
-            width: 90%;
-            margin: auto;
-            overflow: hidden;
-            padding: 1rem 0;
-        }
-        section {
-            background: #fff;
-            margin: 1.5rem 0;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            animation: slideIn 1s ease-out;
-        }
-        h2 {
-            color: #1e5f74;
-            margin-top: 0;
-        }
-        h3 {
-            color: #4a7c85;
-        }
-        ul {
-            list-style-type: square;
-            padding-left: 20px;
-        }
-        .highlight {
-            background: #eaf7e4;
-            padding: 10px;
-            border-left: 4px solid #1e5f74;
-            margin: 1rem 0;
-            animation: highlightFade 2s infinite alternate;
-        }
-        img {
-            width: 100%;
-            margin: 1rem 0;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-        img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            background: #1e5f74;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 1rem;
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        @keyframes slideIn {
-            from { transform: translateY(20px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-        @keyframes highlightFade {
-            from { background-color: #eaf7e4; }
-            to { background-color: #cfe9d6; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Effect of Arbuscular Mycorrhizal Fungi on Soil Status</title>
+  
+  <!-- Primary Meta Tags -->
+  <meta name="description" content="Explore the impact of Arbuscular Mycorrhizal Fungi (AMF) on soil health and potato growth in Nepal. Learn about sustainable agriculture practices and phosphorus fertilization.">
+  <meta name="keywords" content="AMF, Arbuscular Mycorrhizal Fungi, potato growth, soil health, sustainable agriculture, Nepal, phosphorus fertilization">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://example.com/amf-potato-growth">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Effect of Arbuscular Mycorrhizal Fungi on Soil Status">
+  <meta property="og:description" content="Explore the impact of Arbuscular Mycorrhizal Fungi on soil health and potato growth in Nepal.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://example.com/amf-potato-growth">
+  <meta property="og:image" content="https://example.com/path-to-image.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Effect of Arbuscular Mycorrhizal Fungi on Soil Status">
+  <meta name="twitter:description" content="Explore the impact of Arbuscular Mycorrhizal Fungi on soil health and potato growth in Nepal.">
+  <meta name="twitter:image" content="https://example.com/path-to-image.jpg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Effect of Arbuscular Mycorrhizal Fungi on Soil Status",
+    "description": "Explore the impact of Arbuscular Mycorrhizal Fungi (AMF) on soil health and potato growth in Nepal. Learn about sustainable agriculture practices and phosphorus fertilization.",
+    "author": {
+      "@type": "Person",
+      "name": "Anup Pudasaini"
+    },
+    "datePublished": "2025-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Research by Anup Pudasaini",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://example.com/logo.png"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.8;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      transition: background-color 0.5s ease;
+    }
+    header {
+      background: linear-gradient(90deg, #1e5f74, #4a7c85);
+      color: #fff;
+      padding: 2rem 0;
+      text-align: center;
+      animation: fadeIn 2s;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      overflow: hidden;
+      padding: 1rem 0;
+    }
+    section {
+      background: #fff;
+      margin: 1.5rem 0;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      animation: slideIn 1s ease-out;
+    }
+    h2 {
+      color: #1e5f74;
+      margin-top: 0;
+    }
+    h3 {
+      color: #4a7c85;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    .highlight {
+      background: #eaf7e4;
+      padding: 10px;
+      border-left: 4px solid #1e5f74;
+      margin: 1rem 0;
+      animation: highlightFade 2s infinite alternate;
+    }
+    img {
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 8px;
+      transition: transform 0.3s ease;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: #1e5f74;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 1rem;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideIn {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes highlightFade {
+      from { background-color: #eaf7e4; }
+      to { background-color: #cfe9d6; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Effect of AMF on Potato Growth</h1>
-        <p>A Comprehensive Research Study on Sustainable Agriculture in Nepal</p>
-    </header>
-    <div class="container">
-        <!-- Introduction -->
-        <section>
-            <h2>Introduction</h2>
-            <p>Potatoes (Solanum tuberosum L.) are a staple crop in Nepal, grown for both subsistence and commercial purposes. Despite their importance, the crop faces significant challenges, particularly due to the high demand for phosphorus (P), a critical nutrient for tuber formation and overall plant health. This study examines the synergistic effect of Arbuscular Mycorrhizal Fungi (AMF) and phosphorus fertilization on potato growth and soil nutrient availability.</p>
-            <p><strong>Key Facts:</strong></p>
-            <ul>
-                <li>Potato contributes 6.35% to Nepal's agricultural GDP.</li>
-                <li>Phosphorus plays a pivotal role in energy transfer, metabolic processes, and root development.</li>
-                <li>Excessive reliance on chemical fertilizers has adverse effects on soil health and sustainability.</li>
-            </ul>
-        </section>
+  <header>
+    <h1>Effect of AMF on Potato Growth</h1>
+    <p>A Comprehensive Research Study on Sustainable Agriculture in Nepal</p>
+  </header>
+  <div class="container">
+    <!-- Introduction -->
+    <section>
+      <h2>Introduction</h2>
+      <p>Potatoes (Solanum tuberosum L.) are a staple crop in Nepal, grown for both subsistence and commercial purposes. Despite their importance, the crop faces significant challenges, particularly due to the high demand for phosphorus (P), a critical nutrient for tuber formation and overall plant health. This study examines the synergistic effect of Arbuscular Mycorrhizal Fungi (AMF) and phosphorus fertilization on potato growth and soil nutrient availability.</p>
+      <p><strong>Key Facts:</strong></p>
+      <ul>
+        <li>Potato contributes 6.35% to Nepal's agricultural GDP.</li>
+        <li>Phosphorus plays a pivotal role in energy transfer, metabolic processes, and root development.</li>
+        <li>Excessive reliance on chemical fertilizers has adverse effects on soil health and sustainability.</li>
+      </ul>
+    </section>
 
-        <!-- Background -->
-        <section>
-            <h2>Background</h2>
-            <p>Phosphorus availability in Nepalese soils is often limited due to its fixation in unavailable forms. AMF, a natural biofertilizer, forms a symbiotic relationship with plant roots, enhancing the plant's ability to access nutrients in the soil. This research highlights the integration of AMF to reduce dependency on chemical fertilizers while improving yield.</p>
-            <div class="highlight">
-                <strong>Did you know?</strong> AMF colonizes over 80% of terrestrial plants, playing a crucial role in sustainable agriculture by improving nutrient cycling and plant resilience.
-            </div>
-        </section>
+    <!-- Background -->
+    <section>
+      <h2>Background</h2>
+      <p>Phosphorus availability in Nepalese soils is often limited due to its fixation in unavailable forms. AMF, a natural biofertilizer, forms a symbiotic relationship with plant roots, enhancing the plant's ability to access nutrients in the soil. This research highlights the integration of AMF to reduce dependency on chemical fertilizers while improving yield.</p>
+      <div class="highlight">
+        <strong>Did you know?</strong> AMF colonizes over 80% of terrestrial plants, playing a crucial role in sustainable agriculture by improving nutrient cycling and plant resilience.
+      </div>
+    </section>
 
-        <!-- Objectives -->
-        <section>
-            <h2>Research Objectives</h2>
-            <ul>
-                <li>To evaluate the impact of AMF and phosphorus levels on soil nutrient availability.</li>
-                <li>To quantify tuber and root phosphorus uptake under varied treatments.</li>
-                <li>To analyze the interactive effects of AMF and phosphorus on potato yield and growth.</li>
-            </ul>
-        </section>
+    <!-- Objectives -->
+    <section>
+      <h2>Research Objectives</h2>
+      <ul>
+        <li>To evaluate the impact of AMF and phosphorus levels on soil nutrient availability.</li>
+        <li>To quantify tuber and root phosphorus uptake under varied treatments.</li>
+        <li>To analyze the interactive effects of AMF and phosphorus on potato yield and growth.</li>
+      </ul>
+    </section>
 
-        <!-- Methodology -->
-        <section>
-            <h2>Methodology</h2>
-            <p><strong>Study Location:</strong> Sundarbazar, Lamjung, Nepal.</p>
-            <p><strong>Experimental Design:</strong> A 2-factor factorial RCBD (Randomized Complete Block Design) with 9 treatments and 3 replications.</p>
-            <p><strong>Experimental Setup:</strong></p>
-            <ul>
-                <li>Design: 2 Factor Factorial RCBD</li>
-                <li>No of Plots: 27</li>
-                <li>Spacing: 70 cm * 25 cm</li>
-                <li>Plot size: 3.75 m<sup>2</sup></li>
-                <li>Variety of potatoes: Janak Dev</li>
-                <li>Field size: 157 m<sup>2</sup></li>
-                <li>No of plants within each plot: 20</li>
-                <li>AMF strain: Glomus and Gigaspora</li>
-                <li>AMF substrate: Bentonite clay @ 9spore gram<sup>-1</sup></li>
-                <li>Source of AMF: Prakash Agrovet, Itahari</li>
-            </ul>
-            <h3>Method of Soil Inoculation of AMF</h3>
-            <p> The first AMF inoculant was placed during tuber plantation. The fertilizer was applied first, covered by soil, and then inoculation was applied. After 12 days when plantlets and adventitious roots (c.a. 10 mm) started appearing, the second treatment of AMF inoculant was placed around the adventitious roots, to confirm the inoculation.</p>
-        </section>
+    <!-- Methodology -->
+    <section>
+      <h2>Methodology</h2>
+      <p><strong>Study Location:</strong> Sundarbazar, Lamjung, Nepal.</p>
+      <p><strong>Experimental Design:</strong> A 2-factor factorial RCBD (Randomized Complete Block Design) with 9 treatments and 3 replications.</p>
+      <p><strong>Experimental Setup:</strong></p>
+      <ul>
+        <li>Design: 2 Factor Factorial RCBD</li>
+        <li>No of Plots: 27</li>
+        <li>Spacing: 70 cm * 25 cm</li>
+        <li>Plot size: 3.75 m<sup>2</sup></li>
+        <li>Variety of potatoes: Janak Dev</li>
+        <li>Field size: 157 m<sup>2</sup></li>
+        <li>No of plants within each plot: 20</li>
+        <li>AMF strain: Glomus and Gigaspora</li>
+        <li>AMF substrate: Bentonite clay @ 9 spore gram<sup>-1</sup></li>
+        <li>Source of AMF: Prakash Agrovet, Itahari</li>
+      </ul>
+      <h3>Method of Soil Inoculation of AMF</h3>
+      <p>The first AMF inoculant was placed during tuber plantation. The fertilizer was applied first, covered by soil, and then inoculation was applied. After 12 days when plantlets and adventitious roots (c.a. 10 mm) started appearing, the second treatment of AMF inoculant was placed around the adventitious roots to confirm the inoculation.</p>
+    </section>
 
-        <!-- Key Findings -->
-        <section>
-            <h2>Key Findings</h2>
-            <h3>Tuber Yield</h3>
-            <p>The highest yield (8.69 kg/plot) was achieved with 36g AMF and 38g phosphorus. The combination improved the number and size of tubers, demonstrating the effectiveness of integrated treatments.</p>
-            <h3>Phosphorus Uptake</h3>
-            <p>AMF inoculation significantly increased phosphorus uptake, particularly in phosphorus-deficient conditions. Root phosphorus concentration rose by 12%, and tuber phosphorus content improved under combined treatments.</p>
-            <h3>Soil Nutrients</h3>
-            <p>AMF enhanced soil phosphorus availability while reducing residual potassium due to improved plant uptake. These findings underline the role of AMF in nutrient cycling.</p>
-        </section>
+    <!-- Key Findings -->
+    <section>
+      <h2>Key Findings</h2>
+      <h3>Tuber Yield</h3>
+      <p>The highest yield (8.69 kg/plot) was achieved with 36g AMF and 38g phosphorus. The combination improved the number and size of tubers, demonstrating the effectiveness of integrated treatments.</p>
+      <h3>Phosphorus Uptake</h3>
+      <p>AMF inoculation significantly increased phosphorus uptake, particularly in phosphorus-deficient conditions. Root phosphorus concentration rose by 12%, and tuber phosphorus content improved under combined treatments.</p>
+      <h3>Soil Nutrients</h3>
+      <p>AMF enhanced soil phosphorus availability while reducing residual potassium due to improved plant uptake. These findings underline the role of AMF in nutrient cycling.</p>
+    </section>
 
-        <!-- Conclusion -->
-        <section>
-            <h2>Conclusion</h2>
-            <p>Integrating AMF inoculation with phosphorus fertilization offers a sustainable solution to improve potato yields while maintaining soil health. This approach minimizes the environmental impact of chemical fertilizers and promotes long-term agricultural sustainability.</p>
-        </section>
+    <!-- Conclusion -->
+    <section>
+      <h2>Conclusion</h2>
+      <p>Integrating AMF inoculation with phosphorus fertilization offers a sustainable solution to improve potato yields while maintaining soil health. This approach minimizes the environmental impact of chemical fertilizers and promotes long-term agricultural sustainability.</p>
+    </section>
 
-        <!-- References -->
-        <section>
-            <h2>References</h2>
-            <ul>
-                <li>Smith, S.E. & Read, D.J., 2010. Mycorrhizal Symbiosis...</li>
-                <li>Freeman, K.L. et al., 1998. Effect of phosphorus on potato yield...</li>
-                <li>Adhikari, S.P. et al., 2023. Analysis of technical efficiency...</li>
-                <!-- Add other references -->
-            </ul>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2025 Research by Anup Pudasaini | All Rights Reserved.</p>
-    </footer>
+    <!-- References -->
+    <section>
+      <h2>References</h2>
+      <ul>
+        <li>Smith, S.E. &amp; Read, D.J., 2010. Mycorrhizal Symbiosis...</li>
+        <li>Freeman, K.L. et al., 1998. Effect of phosphorus on potato yield...</li>
+        <li>Adhikari, S.P. et al., 2023. Analysis of technical efficiency...</li>
+      </ul>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2025 Research by Anup Pudasaini | All Rights Reserved.</p>
+  </footer>
 </body>
 </html>
