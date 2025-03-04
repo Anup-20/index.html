@@ -56,13 +56,19 @@
     }
     footer {
       text-align: center;
-      padding: 20px 0;
+      padding: 10px 0; /* Reduce padding for a smaller footer */
       border-top: 1px solid #ccc;
       background-color: #007b5e; /* Dark green footer */
       color: white;
     }
+    footer .footer-content {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
     footer .footer-logo {
-      width: 50px;
+      width: 30px; /* Smaller logo size */
       vertical-align: middle;
     }
     h1, h2, h3 {
@@ -129,8 +135,10 @@
   </main>
 
   <footer>
-    <img src="info.png" alt="Infomatics Logo - Sustainable Agriculture Solutions" class="footer-logo">
-    <p>&copy; 2025 Anup Pudasaini. All rights reserved. | Designed by <a href="mailto:pudasainianoop100@gmail.com">Anup Pudasaini</a></p>
+    <div class="footer-content">
+      <img src="info.png" alt="Infomatics Logo - Sustainable Agriculture Solutions" class="footer-logo">
+      <p>&copy; 2025 Anup Pudasaini. All rights reserved. | Designed by <a href="mailto:pudasainianoop100@gmail.com">Anup Pudasaini</a></p>
+    </div>
   </footer>
 </body>
 </html>
