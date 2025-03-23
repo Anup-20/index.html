@@ -3,11 +3,39 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Home - Krisi-Sarathi </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Krishi-Sarathi</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&display=swap">
+    <!-- Custom Styles -->
+    <style>
+        /* Apply Global Fonts */
+        body {
+            font-family: 'Roboto', 'Inter', sans-serif;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation Styling */
+        .animate-text {
+            animation: fadeInUp 1.5s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+    </style>
 </head>
+
 
 <body>
     <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
@@ -27,8 +55,9 @@
         </div>
   <div class="col-md-10 col-xl-8 text-center text-md-start mx-auto" style="padding: 20px;">
     <div style="text-align: left; max-width: 100%; margin: auto;">
-        <p class="fw-bold text-success mb-2 animate-text" style="font-size: 1.5rem; text-align: center;">Empowering Agriculture, Enabling Growth</p>
-        <h1 class="fw-bold animate-text" style="font-size: 2.5rem; text-align: center;">The best solution for Agriculture training and insights</h1>
+        <p class="fw-bold text-success mb-2 animate-text">Empowering Agriculture, Enabling Growth</p>
+<h1 class="fw-bold animate-text">The best solution for Agriculture training and insights</h1>
+        
     </div>
 </div>
 
@@ -62,16 +91,21 @@ h1, p {
                     </div>
                 </div>
 <div class="col-12 col-lg-10 mx-auto">
-    <div class="position-relative" style="display: flex; flex-wrap: wrap; justify-content: center;">
-        <div style="position: relative; flex: 0 0 45%; margin: 20px;">
-            <img class="img-fluid" src="hero_background.webp" alt="Hero Background">
+    <div class="position-relative" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px;">
+        <!-- Optimized Image 1 -->
+        <div style="position: relative; flex: 0 0 45%;">
+            <img class="img-fluid" src="hero_background.webp" alt="Hero Background" style="max-width: 100%; height: auto; object-fit: cover; border-radius: 10px;">
         </div>
-        <div style="position: relative; flex: 0 0 45%; margin: 20px;">
-            <img class="img-fluid" src="2.jpg.webp" alt="Image 2">
+        <!-- Optimized Image 2 -->
+        <div style="position: relative; flex: 0 0 45%;">
+            <img class="img-fluid" src="2.jpg.webp" alt="Image 2" style="max-width: 100%; height: auto; object-fit: cover; border-radius: 10px;">
         </div>
-        <div style="position: relative; flex: 0 0 60%; margin: 20px;">
-            <img class="img-fluid" src="1.jpg.webp" alt="Image 1">
+        <!-- Optimized Image 3 -->
+        <div style="position: relative; flex: 0 0 60%;">
+            <img class="img-fluid" src="1.jpg.webp" alt="Image 3" style="max-width: 100%; height: auto; object-fit: cover; border-radius: 10px;">
         </div>
+    </div>
+</div>
     </div>
 </div>
                 </div>
@@ -340,10 +374,52 @@ h1, p {
                         </svg></li>
                 </ul>
             </div>
+       </div>
+    <footer style="background-color: #007bff; color: white; padding: 20px; text-align: center;">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3">
+                    <h3 class="fs-6 fw-bold">Services</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: white;">Agriculture Consulting</a></li>
+                        <li><a href="#" style="color: white;">Training</a></li>
+                        <li><a href="#" style="color: white;">Research Insights</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <h3 class="fs-6 fw-bold">About</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: white;">Company</a></li>
+                        <li><a href="#" style="color: white;">Team</a></li>
+                        <li><a href="#" style="color: white;">Legacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3">
+                    <h3 class="fs-6 fw-bold">Careers</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" style="color: white;">Job Openings</a></li>
+                        <li><a href="#" style="color: white;">Employee Success</a></li>
+                        <li><a href="#" style="color: white;">Benefits</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center">
+                    <p class="mb-2 fw-bold">Krishi Sarathi</p>
+                    <p class="text-light">Empowering Agriculture, Enabling Growth</p>
+                </div>
+            </div>
+            <hr style="border-color: white;">
+            <div class="d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">© 2025 Krishi Sarathi. All Rights Reserved.</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" style="color: white;">Facebook</a></li>
+                    <li class="list-inline-item"><a href="#" style="color: white;">Twitter</a></li>
+                    <li class="list-inline-item"><a href="#" style="color: white;">Instagram</a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     <script src="bootstrap.min.js"></script>
     <script src="bold-and-bright.js"></script>
 </body>
-
 </html>
+
