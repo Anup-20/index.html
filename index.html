@@ -142,13 +142,16 @@
   </div>
 </section>
 
-<!-- Services Section Card or Button for Research and Extension -->
+<!-- Include Bootstrap CSS in <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Services Section: Research & Extension Card -->
 <div class="col-lg-4 col-md-6 mb-4">
   <div class="card h-100 shadow-sm">
     <div class="card-body text-center">
       <h5 class="card-title fw-bold">Research & Extension</h5>
-      <p class="card-text">Explore our work in biochar technology and AMF-based research to improve sustainable farming.</p>
-      <!-- Trigger Modal -->
+      <p class="card-text">Explore our innovative work in sustainable agriculture and plant science.</p>
+      <!-- Modal Trigger Button -->
       <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#researchModal">
         Learn More
       </button>
@@ -157,31 +160,38 @@
 </div>
 
 <!-- Modal Section -->
-<div class="modal fade" id="researchModal" tabindex="-1" aria-labelledby="researchModalLabel" aria-hidden="true"> 
+<div class="modal fade" id="researchModal" tabindex="-1" aria-labelledby="researchModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
+    
       <div class="modal-header">
         <h5 class="modal-title fw-bold" id="researchModalLabel">Research and Extension</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
+      
       <div class="modal-body">
         <!-- Biochar Section -->
         <div class="mb-4">
           <h6 class="fw-bold">Biochar Technology</h6>
           <p>Explore biochar as an innovative solution for sustainable farming practices.</p>
-          <a href="biochar.html" class="btn btn-secondary shadow mb-3" role="button">Explore Biochar</a>
+          <a href="biochar.html" class="btn btn-secondary shadow mb-3" target="_blank" role="button">Explore Biochar</a>
         </div>
 
         <!-- AMF Research Section -->
         <div>
           <h6 class="fw-bold">AMF Research</h6>
           <p>Discover advancements in Arbuscular Mycorrhizal Fungi (AMF) and how they contribute to plant growth.</p>
-          <a href="research.html" class="btn btn-primary shadow" role="button">Explore AMF Research</a>
+          <a href="research.html" class="btn btn-primary shadow" target="_blank" role="button">Explore AMF Research</a>
         </div>
       </div>
+
     </div>
   </div>
 </div>
+
+<!-- Include Bootstrap JS before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     </section>
           <div class="container bg-primary-gradient py-5">
         <div class="row">
