@@ -7,6 +7,7 @@
     <title>Pricing - Krishi-Sarathi</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_PAYPAL_CLIENT_ID"></script> <!-- Replace with your PayPal Client ID -->
 </head>
 
 <body>
@@ -57,7 +58,12 @@
                                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
                                             </svg></span><span>Basic Training Materials</span></li>
                                 </ul>
-                            </div><button class="btn btn-primary d-block w-100" type="button">Choose Plan</button>
+                            </div>
+                            <form id="basic-plan-form">
+                                <div class="mb-3"><input class="form-control" type="text" id="basic-name" name="name" placeholder="Name" required></div>
+                                <div class="mb-3"><input class="form-control" type="email" id="basic-email" name="email" placeholder="Email" required></div>
+                                <div id="paypal-button-basic"></div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -90,12 +96,18 @@
                                                 <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425a.247.247 0 0 1 .02-.022"></path>
                                             </svg></span><span>Field Visits and Practical Training</span></li>
                                 </ul>
-                            </div><button class="btn btn-primary d-block w-100 bg-semi-white" type="button">Choose Plan</button>
+                            </div>
+                            <form id="pro-plan-form">
+                                <div class="mb-3"><input class="form-control" type="text" id="pro-name" name="name" placeholder="Name" required></div>
+                                <div class="mb-3"><input class="form-control" type="email" id="pro-email" name="email" placeholder="Email" required></div>
+                                <div id="paypal-button-pro"></div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    
     </section>
     <footer class="bg-primary-gradient">
         <div class="container py-4 py-lg-5">
