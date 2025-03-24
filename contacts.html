@@ -10,7 +10,7 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("info.krishisarathi@gmail.com"); // Replace "your_user_id" with your actual EmailJS user ID
+            emailjs.init("your_user_id"); // Replace "your_user_id" with your actual EmailJS user ID
         })();
     </script>
 </head>
@@ -38,10 +38,7 @@
             </div>
         </div>
     </nav>
-</body>
 
-    </div>
-        </div>
     <section class="py-5">
         <div class="container py-5">
             <div class="row mb-5">
@@ -78,8 +75,8 @@
                                     message: document.getElementById("message-1").value,
                                 };
 
-                                const serviceID = "info.krishisarathi@gmail.com"; // Replace with your EmailJS Service ID
-                                const templateID = "info.krishisarathi@gmail.com"; // Replace with your EmailJS Template ID
+                                const serviceID = "your_service_id"; // Replace with your EmailJS Service ID
+                                const templateID = "your_template_id"; // Replace with your EmailJS Template ID
 
                                 const templateParams = {
                                     name: params.name,
