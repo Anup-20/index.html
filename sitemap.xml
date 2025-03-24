@@ -1,39 +1,53 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://anuppudasaini.com.np/index.html</loc>
-    <lastmod>2025-01-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://anuppudasaini.com.np/about.html</loc>
-    <lastmod>2025-01-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://anuppudasaini.com.np/bio.html</loc>
-    <lastmod>2025-01-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://anuppudasaini.com.np/research.html</loc>
-    <lastmod>2025-01-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://anuppudasaini.com.np/biochar.html</loc>
-    <lastmod>2025-01-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://anuppudasaini.com.np/contact.html</loc>
-    <lastmod>2025-01-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://anuppudasaini.com.np/</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/index.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/services.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/projects.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/pricing.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/contacts.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/signin.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/biochar.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/research.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://anuppudasaini.com.np/bio.html</loc>
+<lastmod>2025-03-24T10:36:55+00:00</lastmod>
+<priority>0.80</priority>
+</url>
 </urlset>
