@@ -64,7 +64,7 @@
                             </div>
                         </form>
                         <script>
-                            // JavaScript to handle form submission
+                            // JavaScript to handle form submission and send email to the specified address
                             document.getElementById('contact-form').addEventListener('submit', function (event) {
                                 event.preventDefault();
 
@@ -74,11 +74,22 @@
                                     message: document.getElementById("message-1").value,
                                 };
 
-                                emailjs.send("your_service_id", "your_template_id", params)
+                                const serviceID = "your_service_id"; // Replace with your EmailJS Service ID
+                                const templateID = "your_template_id"; // Replace with your EmailJS Template ID
+
+                                const templateParams = {
+                                    name: params.name,
+                                    email: params.email,
+                                    message: params.message,
+                                    to_email: "info.krishisarathi@gmail.com" // This ensures the message is sent to the target email
+                                };
+
+                                emailjs.send(serviceID, templateID, templateParams)
                                     .then(function (response) {
                                         alert("Email sent successfully!");
                                     }, function (error) {
-                                        alert("Failed to send email, please try again.");
+                                        alert("Failed to send email. Please try again.");
+                                        console.error("Error sending email:", error);
                                     });
                             });
                         </script>
@@ -116,8 +127,7 @@
                             </div>
                             <div class="px-2">
                                 <h6 class="fw-bold mb-0">Location</h6>
-                                <p class="text-muted mb-0">Kageshwori Manohara-5, Ktm</p>
-
+                                <p class="text-muted mb-0">Kageshwori Manohara-5, Ktm </p>
                             </div>
                         </div>
                     </div>
