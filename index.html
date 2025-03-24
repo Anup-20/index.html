@@ -355,7 +355,373 @@
                                 <textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea>
                             </div>
                             <div>
+                                <button class="btn btn-primary shadow<!DOCTYPE html>
+<html data-bs-theme="light" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Krishi-Sarathi</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&display=swap">
+    <!-- Custom Styles -->
+    <style>
+        /* Apply Global Fonts */
+        body {
+            font-family: 'Roboto', 'Inter', sans-serif;
+            display: block; /* Ensures vertical stacking */
+            overflow-x: hidden; /* Prevents horizontal scrolling */
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Animation Styling */
+        .animate-text {
+            animation: fadeInUp 1.5s ease-in-out;
+            animation-fill-mode: forwards;
+        }
+
+        /* Responsive Adjustments for Text */
+        h1, p {
+            width: 100%;
+            line-height: 1.5;
+            text-align: center;
+        }
+
+        /* Image Styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .position-relative {
+            display: block; /* Stacks elements vertically */
+            text-align: center;
+            gap: 15px;
+        }
+
+        /* Card Styling */
+        .card {
+            border: none;
+            border-radius: 15px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-body {
+            padding: 1.5rem;
+        }
+
+        .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        /* Button Styling */
+        .btn {
+            border-radius: 25px;
+            padding: 0.5rem 1.5rem;
+            font-weight: 600;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: #004085;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        footer ul {
+            padding: 0;
+            list-style: none;
+        }
+
+        footer ul li {
+            margin-bottom: 10px;
+        }
+
+        footer hr {
+            border-color: white;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="/">
+                <span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"></span>
+                <span>Krishi-Sarathi</span>
+            </a>
+            <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
+                <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/pricing.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contacts.html">Contacts</a></li>
+                </ul>
+                <a class="btn btn-primary shadow" role="button" href="signup.html">Sign up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-primary-gradient">
+        <div class="container pt-4 pt-xl-5">
+            <div class="row pt-5">
+                <div class="col-md-10 col-xl-8 text-center mx-auto" style="padding: 20px;">
+                    <p class="fw-bold text-success mb-2 animate-text fs-2">Empowering Agriculture, Enabling Growth</p>
+                    <h1 class="fw-bold animate-text fs-3">The best solution for Agriculture training and insights</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container bg-primary-gradient py-5">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2 fs-2">Our Services</p>
+                    <h3 class="fw-bold">What We Do</h3>
+                </div>
+            </div>
+            <div class="py-5">
+                <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto" style="max-width: 1200px;">
+                    <!-- Optimized Image 1 -->
+                    <div class="col">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body text-center">
+                                <img class="img-fluid mb-3" src="hero_background.webp" alt="Agriculture Consulting" style="max-height: 150px; object-fit: cover;">
+                                <h5 class="fw-bold card-title">Agricultural Consulting</h5>
+                                <p class="text-muted card-text mb-3">Expert guidance for productivity and sustainable growth.</p>
+                                <a href="services.html" class="btn btn-primary shadow">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Optimized Image 2 -->
+                    <div class="col">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body text-center">
+                                <img class="img-fluid mb-3" src="2.jpg.webp" alt="Training and Workshops" style="max-height: 150px; object-fit: cover;">
+                                <h5 class="fw-bold card-title">Training & Workshops</h5>
+                                <p class="text-muted card-text mb-3">Empowering farmers through skillful training sessions.</p>
+                                <a href="services.html" class="btn btn-primary shadow">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Optimized Image 3 -->
+                    <div class="col">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body text-center">
+                                <img class="img-fluid mb-3" src="1.jpg.webp" alt="Technology Integration" style="max-height: 150px; object-fit: cover;">
+                                <h5 class="fw-bold card-title">Technology Integration</h5>
+                                <p class="text-muted card-text mb-3">Bridging agriculture and innovation for smarter solutions.</p>
+                                <a href="services.html" class="btn btn-primary shadow">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section: Research & Extension Card -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2 fs-2">Research & Extension</p>
+                    <h3 class="fw-bold">Innovative Work in Sustainable Agriculture</h3>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <h5 class="card-title fw-bold">Research & Extension</h5>
+                            <p class="card-text">Explore our innovative work in sustainable agriculture and plant science.</p>
+                            <!-- Modal Trigger Button -->
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#researchModal">
+                                Learn More
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Section -->
+            <div class="modal fade" id="researchModal" tabindex="-1" aria-labelledby="researchModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title fw-bold" id="researchModalLabel">Research and Extension</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Biochar Section -->
+                            <div class="mb-4">
+                                <h6 class="fw-bold">Biochar Technology</h6>
+                                <p>Explore biochar as an innovative solution for sustainable farming practices.</p>
+                                <a href="biochar.html" class="btn btn-secondary shadow mb-3" target="_blank" role="button">Explore Biochar</a>
+                            </div>
+
+                            <!-- AMF Research Section -->
+                            <div>
+                                <h6 class="fw-bold">AMF Research</h6>
+                                <p>Discover advancements in Arbuscular Mycorrhizal Fungi (AMF) and how they contribute to plant growth.</p>
+                                <a href="research.html" class="btn btn-primary shadow" target="_blank" role="button">Explore AMF Research</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5">
+        <div class="container bg-primary-gradient py-5">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2 fs-2">Projects</p>
+                    <h3 class="fw-bold">What We Have Done So Far</h3>
+                </div>
+            </div>
+            <div class="container py-5">
+                <div class="mx-auto" style="max-width: 900px;">
+                    <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center">
+                        <div class="col mb-4">
+                            <div class="card bg-primary-subtle">
+                                <div class="card-body text-center px-4 py-5 px-md-5">
+                                    <p class="fw-bold text-primary card-text mb-2">"Green Fields" Initiative</p>
+                                    <h5 class="fw-bold card-title mb-3">A program promoting organic farming.</h5>
+                                    <a href="projects.html" class="btn btn-primary btn-sm" role="button">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card bg-secondary-subtle">
+                                <div class="card-body text-center px-4 py-5 px-md-5">
+                                    <p class="fw-bold text-secondary card-text mb-2">"Smart Harvest" Project</p>
+                                    <h5 class="fw-bold card-title mb-3">Integration of smart technologies in farming practices.</h5>
+                                    <a href="projects.html" class="btn btn-primary btn-sm" role="button">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col mb-4">
+                            <div class="card bg-info-subtle">
+                                <div class="card-body text-center px-4 py-5 px-md-5">
+                                    <p class="fw-bold text-info card-text mb-2">Community Outreach</p>
+                                    <h5 class="fw-bold card-title mb-3">Collaborative efforts to empower rural communities.</h5>
+                                    <a href="projects.html" class="btn btn-primary btn-sm" role="button">Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2 fs-2">Meet Our Team</p>
+                    <p class="text-muted">No matter the project, our team can handle it.</p>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 d-sm-flex justify-content-sm-center">
+                <div class="col mb-4">
+                    <div class="d-flex flex-column align-items-center align-items-sm-start">
+                        <p class="bg-body-tertiary border rounded p-4">Meet Anup Pudasaini, an enthusiastic agriculture graduate committed to driving sustainable farming practices and innovation. With a focus on empowering farmers, Anup combines research and practical solutions to enhance agricultural productivity and resilience. <a href="bio.html" class="btn btn-link">More Bio</a></p>
+                        <div class="d-flex">
+                            <img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="profile.JPG">
+                            <div>
+                                <p class="fw-bold text-primary mb-0">Anup Pudasaini</p>
+                                <p class="text-muted mb-0">Agriculture Consultant</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2 fs-2">Contacts</p>
+                    <h2 class="fw-bold">How You Can Reach Us</h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-xl-4">
+                    <div>
+                        <form class="p-3 p-xl-4" method="post" data-bs-theme="light">
+                            <div class="mb-3">
+                                <input class="form-control" type="text" id="name-1" name="name" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input class="form-control" type="email" id="email-1" name="email" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="message-1" name="message" rows="6" placeholder="Message"></textarea>
+                            </div>
+                            <div>
                                 <button class="btn btn-primary shadow d-block w-100" type="submit">Send</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
+                    <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start h-100">
+                        <div class="d-flex align-items-center p-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 d-block w-100" type="submit">Send</button>
                             </div>
                         </form>
                     </div>
@@ -366,3 +732,40 @@
                             <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone">
                                     <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.
+                                        <footer style="background-color: #004085; color: white; padding: 20px; text-align: center;">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 text-center text-lg-start">
+                <h3 class="fs-6 fw-bold">Services</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: white;">Agriculture Consulting</a></li>
+                    <li><a href="#" style="color: white;">Training</a></li>
+                    <li><a href="#" style="color: white;">Research Insights</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 text-center text-lg-start">
+                <h3 class="fs-6 fw-bold">About</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: white;">Company</a></li>
+                    <li><a href="#" style="color: white;">Team</a></li>
+                    <li><a href="#" style="color: white;">Legacy</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 text-center text-lg-start">
+                <h3 class="fs-6 fw-bold">Careers</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#" style="color: white;">Job Openings</a></li>
+                    <li><a href="#" style="color: white;">Employee Success</a></li>
+                    <li><a href="#" style="color: white;">Benefits</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 text-center text-lg-start">
+                <h3 class="fs-6 fw-bold">Contact</h3>
+                <p>Email: <a href="mailto:info.krishisarathi@gmail.com" style="color: white;">info.krishisarathi@gmail.com</a></p>
+                <p>Phone: <a href="tel:+9779861037714" style="color: white;">+977-9861037714</a></p>
+            </div>
+        </div>
+        <hr style="border-color: white; margin: 20px 0;">
+        <p class="mb-0">© 2025 Krishi Sarathi. All Rights Reserved.</p>
+    </div>
+</footer>
