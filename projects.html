@@ -8,18 +8,25 @@
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
 </head>
-
-<body>
-    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav">
+    <body style="margin: 0; padding: 0; direction: ltr;">
+    <nav class="navbar navbar-expand-md navbar-shrink py-3" id="mainNav" style="position: static; top: 0; width: 100%; z-index: 1000; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
         <div class="container">
-            <!-- Updated Navbar Brand with Logo and Name -->
+            <!-- Navbar Brand with Logo and Name -->
             <a class="navbar-brand d-flex align-items-center" href="/">
                 <img src="logo.jpg" alt="Krishi-Sarathi" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
-                <span class="ms-2">Krishi-Sarathi</span>
+                <div class="ms-2" style="font-size: small; text-align: left;">
+                    <p class="fw-bold text-success mb-0">Empowering Agriculture, Enabling Growth</p>
+                    <span>The best solution for Agriculture training and insights</span>
+                </div>
             </a>
+            
+            <!-- Toggle Button for Smaller Screens -->
             <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
-                <span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span>
+                <span class="visually-hidden">Toggle navigation</span>
+                <span class="navbar-toggler-icon"></span>
             </button>
+            
+            <!-- Navigation Links -->
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link active" href="/index.html">Home</a></li>
@@ -28,10 +35,13 @@
                     <li class="nav-item"><a class="nav-link" href="/pricing.html">Pricing</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contacts.html">Contacts</a></li>
                 </ul>
-                <a class="btn btn-primary shadow" role="button" href="signin.html">Sign up</a>
+                <a class="btn btn-primary shadow" role="button" href="/signin.html">Sign up</a>
             </div>
         </div>
-    </nav>
+</nav>
+    <div style="margin-top: 80px;">
+        <!-- Rest of your page content goes here. -->
+    </div>
 </body>
     </nav>
     <section class="py-5">
