@@ -42,16 +42,17 @@
     <div style="margin-top: 80px;">
         <!-- Rest of your page content goes here. -->
     </div>
-</body>
+<body>
     <section class="py-5">
         <div class="container py-5">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2 Fs-2">Contacts</p>
+                    <p class="fw-bold text-success mb-2 fs-1">Contacts</p>
                     <h2 class="fw-bold mb-2 fs-4">How you can reach us</h2>
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
+                <!-- Contact Form -->
                 <div class="col-md-6 col-xl-4">
                     <div>
                         <form id="contact-form" class="p-3 p-xl-4">
@@ -69,10 +70,9 @@
                             </div>
                         </form>
                         <script>
-                            // JavaScript to handle form submission and open mail client with pre-filled email
+                            // JavaScript to handle form submission
                             document.getElementById('contact-form').addEventListener('submit', function (event) {
                                 event.preventDefault();
-
                                 const name = document.getElementById("name-1").value;
                                 const email = document.getElementById("email-1").value;
                                 const message = document.getElementById("message-1").value;
@@ -83,35 +83,34 @@
                         </script>
                     </div>
                 </div>
+
+                <!-- Contact Info with Icons -->
                 <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
                     <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start h-100">
+                        <!-- Phone Section -->
                         <div class="d-flex align-items-center p-3">
-                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone">
-                                    <path d="M3.654 1.328a.678.678 0 0 1 1.015-.063l2.29 2.29c.329.329.445.812.293 1.24-.168.493-.526 1.19-.998 2.1-.483.928-.94 1.717-1.483 2.26-.543.543-1.332 1-2.26 1.483-.91.472-1.607.83-2.1.998a1.007 1.007 0 0 1-1.24-.293l-2.29-2.29a.678.678 0 0 1 .063-1.015l1.67-1.67c.329-.329.812-.445 1.24-.293.493.168 1.19.526 2.1.998.928.483 1.717.94 2.26 1.483.543.543 1 1.332 1.483 2.26.472.91.83 1.607.998 2.1.152.427.036.91-.293 1.24l-1.67 1.67c-.329.329-.812.445-1.24.293-.493-.168-1.19-.526-2.1-.998-.928-.483-1.717-.94-2.26-1.483-.543-.543-1-1.332-1.483-2.26-.472-.91-.83-1.607-.998-2.1a1.007 1.007 0 0 1 .293-1.24l2.29-2.29a.678.678 0 0 1 1.015.063z"/>
-                                </svg>
+                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center">
+                                <i class="bi bi-telephone"></i>
                             </div>
                             <div class="px-2">
                                 <h6 class="fw-bold mb-0">Phone</h6>
                                 <p class="text-muted mb-0">+977-9861037714</p>
                             </div>
                         </div>
+                        <!-- Email Section -->
                         <div class="d-flex align-items-center p-3">
-                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope">
-                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm14 0H2v.217l6 3.6 6-3.6V4zm0 1.383l-5.293 3.176a1 1 0 0 1-1.414 0L2 5.383V12h12V5.383z"/>
-                                </svg>
+                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center">
+                                <i class="bi bi-envelope"></i>
                             </div>
                             <div class="px-2">
                                 <h6 class="fw-bold mb-0">Email</h6>
                                 <p class="text-muted mb-0">info.krishisarathi@gmail.com</p>
                             </div>
                         </div>
+                        <!-- Location Section -->
                         <div class="d-flex align-items-center p-3">
-                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pin">
-                                    <path d="M4.146 6.146a.5.5 0 0 1 .708 0L8 9.293l3.146-3.147a.5.5 0 0 1 .708.708L8.707 10l3.147 3.146a.5.5 0 0 1-.708.708L8 10.707l-3.146 3.147a.5.5 0 0 1-.708-.708L7.293 10 4.146 6.854a.5.5 0 0 1 0-.708z"/>
-                                </svg>
+                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center">
+                                <i class="bi bi-geo-alt"></i>
                             </div>
                             <div class="px-2">
                                 <h6 class="fw-bold mb-0">Location</h6>
