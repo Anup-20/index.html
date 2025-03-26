@@ -1,10 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&display=swap);
 /*!
-.nav-link.active {
-    color: black; /* Highlight the active item with black color */
-    font-weight: bold; /* Make the active item bold */
-    border-bottom: 2px solid black; /* Optional underline */
-}
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
