@@ -124,20 +124,6 @@
     </style>
 </head>
 <body>
-    <script>
-    // Get all navigation links
-    const navLinks = document.querySelectorAll('.nav-link');
-    const currentUrl = window.location.pathname;
-
-    navLinks.forEach(link => {
-        // Check if the href of the link matches the current URL
-        if (link.getAttribute('href') === currentUrl) {
-            link.classList.add('active'); // Add the active class
-        } else {
-            link.classList.remove('active'); // Remove the active class
-        }
-    });
-</script>
     <nav class="navbar navbar-expand-md navbar-shrink py-3" id="mainNav" style="position: static; top: 0; width: 100%; z-index: 1000; background-color: white; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
         <div class="container">
             <!-- Updated Navbar Brand with Logo and Name -->
