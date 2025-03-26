@@ -1,51 +1,58 @@
-<url>
-<loc>https://anuppudasaini.com.np/</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/index.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/services.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/projects.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/pricing.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/contacts.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/signin.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/biochar.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/research.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://anuppudasaini.com.np/bio.html</loc>
-<lastmod>2025-03-24T10:36:55+00:00</lastmod>
-<priority>0.80</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://anuppudasaini.com.np/</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/favicon.ico</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/index.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/services.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/projects.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/pricing.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/contacts.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/signin.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/biochar.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/research.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://anuppudasaini.com.np/bio.html</loc>
+        <lastmod>2025-03-24T10:36:55+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
 </urlset>
