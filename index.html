@@ -116,50 +116,50 @@
         </div>
     </section>
 
-    <!-- Research & Extension Section -->
-    <section class="py-4">
-        <div class="container bg-primary-gradient py-5">
-            <div class="row">
-                <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2 fs-2">Projects</p>
-                    <h3 class="fw-bold">What we have done so far</h3>
-                </div>
-            </div>
-            <div class="container py-4">
-                <div class="mx-auto" style="max-width: 900px;">
-                    <div class="row row-cols-1 row-cols-md-2 d-flex justify-content-center">
-                        <div class="col mb-4">
-                            <div class="card bg-primary-subtle">
-                                <div class="card-body text-center px-4 py-5 px-md-5">
-                                    <p class="fw-bold text-primary card-text mb-2">"Green Fields" Initiative</p>
-                                    <h5 class="fw-bold card-title mb-3">A program promoting organic farming.</h5>
-                                    <a href="projects.html" class="btn btn-primary btn-sm" role="button">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-4">
-                            <div class="card bg-secondary-subtle">
-                                <div class="card-body text-center px-4 py-5 px-md-5">
-                                    <p class="fw-bold text-secondary card-text mb-2">"Smart Harvest" Project</p>
-                                    <h5 class="fw-bold card-title mb-3">Integration of smart technologies in farming practices.</h5>
-                                    <a href="projects.html" class="btn btn-primary btn-sm" role="button">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col mb-4">
-                            <div class="card bg-info-subtle">
-                                <div class="card-body text-center px-4 py-5 px-md-5">
-                                    <p class="fw-bold text-info card-text mb-2"><strong>Community Outreach</strong></p>
-                                    <h5 class="fw-bold card-title mb-3">Collaborative efforts to empower rural communities.</h5>
-                                    <a href="projects.html" class="btn btn-primary btn-sm" role="button">Learn more</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- Include Bootstrap CSS in <head> -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Services Section: Research & Extension Card -->
+<div class="col-lg-4 col-md-6 mb-4">
+  <div class="card shadow-sm" style="height: auto;"> <!-- Adjusted height for a more compact design -->
+    <div class="card-body text-center" style="padding: 15px;"> <!-- Reduced padding -->
+      <h5 class="card-title fw-bold" style="margin-bottom: 10px;">Research & Extension</h5> <!-- Reduced bottom margin -->
+      <p class="card-text" style="margin-bottom: 15px; font-size: 0.95rem;">Explore our innovative work in sustainable agriculture and plant science.</p> <!-- Adjusted font size -->
+      <!-- Modal Trigger Button -->
+      <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#researchModal">
+        Learn More
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Modal Section -->
+<div class="modal fade" id="researchModal" tabindex="-1" aria-labelledby="researchModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fw-bold" id="researchModalLabel">Research and Extension</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Biochar Section -->
+        <div class="mb-4">
+          <h6 class="fw-bold">Biochar Technology</h6>
+          <p>Explore biochar as an innovative solution for sustainable farming practices.</p>
+          <a href="biochar.html" class="btn btn-secondary shadow btn-sm mb-3" target="_blank" role="button">Explore Biochar</a>
         </div>
-    </section>
+        <!-- AMF Research Section -->
+        <div>
+          <h6 class="fw-bold">AMF Research</h6>
+          <p>Discover advancements in Arbuscular Mycorrhizal Fungi (AMF) and how they contribute to plant growth.</p>
+          <a href="research.html" class="btn btn-primary shadow btn-sm" target="_blank" role="button">Explore AMF Research</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Include Bootstrap JS before </body> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <!-- Meet Our Team Section -->
     <section class="py-4 mt-4">
