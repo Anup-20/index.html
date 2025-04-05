@@ -14,12 +14,41 @@
         <div class="container">
            <a class="navbar-brand d-flex align-items-center" href="/">
    <img src="logo.jpg" alt="Krishi-Sarathi" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;">
+<style>
+/* Flexible container to ensure text fits within the screen */
+.text-container {
+    font-size: small; /* Default font size */
+    text-align: left; /* Default alignment */
+    max-width: 100%; /* Ensures no overflow */
+    overflow-wrap: break-word; /* Ensures proper wrapping */
+    margin: 0 auto; /* Centers the container if necessary */
+}
 
-    <div class="ms-2" style="font-size: small; text-align: left;">
-        <p class="fw-bold text-success mb-0">Krishi-Sarathi</p>
-        <p class="fw-bold text-success mb-0">Empowering Agriculture, Enabling Growth</p>
-        <span>The best solution for Agriculture training and insights</span>
-    </div>
+/* Responsive font sizes */
+@media (max-width: 768px) {
+    .text-container p {
+        font-size: 0.9rem; /* Adjust for tablets */
+    }
+    .text-container span {
+        font-size: 0.8rem; /* Smaller font for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container p {
+        font-size: 0.8rem; /* Adjust for smaller screens */
+        text-align: center; /* Align text for better readability on smaller devices */
+    }
+    .text-container span {
+        font-size: 0.7rem; /* Adjust for smaller screens */
+    }
+}
+</style>
+    <div class="ms-2 text-container">
+    <p class="fw-bold text-success mb-0">Krishi-Sarathi</p>
+    <p class="fw-bold text-success mb-0">Empowering Agriculture, Enabling Growth</p>
+    <span>The best solution for Agriculture training and insights</span>
+</div>
 </a>
             <!-- Toggle Button for Smaller Screens -->
             <button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1">
